@@ -1,0 +1,133 @@
+html {
+  /* principal */
+  --cor-principal: #e56363;
+  --cor-principal-2: #ff9090;
+  --cor-principal-3: #ffc5c5;
+  --cor-principal-4: #ffe7e7;
+  --cor-principal-5: #fdf1f1;
+
+  /* secundaria */
+  --cor-secundaria-1: #a1d7ff;
+  --cor-secundaria-2: #d8eeff;
+  --cor-secundaria-3: #f2f9ff;
+
+  /* tons de cinza */
+  --grey-1: #10111b;
+  --grey-2: #393a41;
+  --grey-3: #5a5c64;
+  --grey-4: #80808a;
+  --grey-5: #c2c2c9;
+  --grey-6: #f0f0f2;
+  --grey-7: #fff;
+}
+
+red {
+  color: var(--cor-principal);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--grey-5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-principal);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--cor-secundaria-3);
+}
+
+.navbar .menuItem {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  color: var(--grey-2);
+}
+
+.navbar .menuItem:hover {
+  color: var(--cor-principal);
+  transition-duration: 0.5s;
+}
+
+.navbar red:hover {
+  color: var(--grey-2);
+  transition-duration: 0.5s;
+}
+
+/* banner section */
+.banner {
+  background-color: var(--cor-secundaria-3);
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey-1);
+}
+
+.subHeading {
+  font-family: "Lato", sans-serif;
+  color: var(--grey-2);
+}
+
+.banner .buttonPrincipal {
+  border-radius: 30px;
+  background-color: var(--cor-principal);
+  color: var(--grey-7);
+  padding: 10px 30px 10px 30px;
+  -webkit-box-shadow: -2px 5px 15px 5px rgba(229, 99, 99, 0.31);
+  box-shadow: -2px 5px 15px 5px rgba(229, 99, 99, 0.31);
+}
+
+.banner .buttonPrincipal:hover {
+  color: var(--cor-principal);
+  background-color: var(--grey-7);
+  border: 1px solid var(--cor-principal);
+}
+
+/* specialties section */
+
+/* doctors section */
+.insideImgContent {
+  position: relative;
+  bottom: 40px;
+}
+
+/* contact section */
+#contact  .buttonPrincipal {
+  display: flex;
+  margin-top: 10px;
+  margin-left: auto;
+  border-radius: 10px;
+  background-color: var(--cor-principal);
+  color: var(--grey-7);
+  padding: 10px 30px 10px 30px;
+}
+
+#contact  .buttonPrincipal:hover {
+  color: var(--cor-principal);
+  background-color: var(--grey-7);
+  border: 1px solid var(--cor-principal);
+}
+
+#contact input {
+height: 56px;
+}
+
+#contact input:focus {
+  border-color: #d95edb;
+  box-shadow: 0 0 0 0.25rem rgb(198 47 103 / 21%);
+}
+
+#contact textarea:focus {
+  border-color: #d95edb;
+  box-shadow: 0 0 0 0.25rem rgb(198 47 103 / 21%);
+}
